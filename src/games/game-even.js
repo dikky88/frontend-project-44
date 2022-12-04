@@ -8,7 +8,7 @@ const gameValues = () => {
     const arr = [];
     const values = [];
     const randNumber = Math.floor(Math.random() * 100);
-    values.push('Question:', randNumber);
+    values.push(`Question: ${randNumber}`);
     arr.push(values);
     if (randNumber % 2 === 0) {
       const res = 'yes';

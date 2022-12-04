@@ -11,7 +11,7 @@ const gameValues = () => {
     const randNumber1 = Math.floor(Math.random() * 10);
     const randNumber2 = Math.floor(Math.random() * 10);
     const randMark = mark[Math.floor(Math.random() * 2)];
-    values.push('Question:', randNumber1, randMark, randNumber2);
+    values.push(`Question: ${randNumber1} ${randMark} ${randNumber2}`);
     arr.push(values);
     if (randMark === '+') {
       const res = randNumber1 + randNumber2;
