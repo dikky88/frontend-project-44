@@ -14,7 +14,7 @@ const gameValues = () => {
         break;
       }
     }
-    arr.push([`${randNumber}`], answer);
+    arr.push([`Question: ${randNumber}`], answer);
     result.push(arr);
   }
   return result;
