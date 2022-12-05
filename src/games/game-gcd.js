@@ -14,7 +14,7 @@ const gameValues = () => {
     const minNumber = Math.min(randNumber1, randNumber2);
     const maxNumber = Math.max(randNumber1, randNumber2);
     let nod = 1;
-    if (maxNumber % minNumber !== 0) {
+    if (maxNumber % minNumber !== 0 && minNumber !== 0) {
       for (let j = 2; j <= minNumber / 2; j += 1) {
         if (maxNumber % j === 0 && minNumber % j === 0) {
           nod = j;
@@ -22,6 +22,8 @@ const gameValues = () => {
       }
     } else if (maxNumber % minNumber === 0) {
       nod = minNumber;
+    } else if (minNumber === 0) {
+      nod = maxNumber;
     }
     arr.push(nod);
     result.push(arr);
