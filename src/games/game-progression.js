@@ -8,7 +8,7 @@ const gameValues = () => {
     const numberFirst = Math.floor(Math.random() * 8) + 1;
     const step = Math.floor(Math.random() * 8) + 1;
     const arr = [];
-    const values = [];
+    const values = ['Question:'];
     for (let j = 1; j <= 10; j += 1) {
       const formula = numberFirst + (step * (j - 1));
       values.push(`${formula}`);
