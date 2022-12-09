@@ -6,11 +6,9 @@ const gameValues = () => {
   const result = [];
   for (let i = 0; i < 3; i += 1) {
     const arr = [];
-    const values = [];
     const randNumber1 = Math.floor(Math.random() * 100);
     const randNumber2 = Math.floor(Math.random() * 100);
-    values.push(`Question: ${randNumber1} ${randNumber2}`);
-    arr.push(values);
+    arr.push([`Question: ${randNumber1} ${randNumber2}`]);
     const minNumber = Math.min(randNumber1, randNumber2);
     const maxNumber = Math.max(randNumber1, randNumber2);
     let nod = 1;
