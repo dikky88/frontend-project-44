@@ -9,13 +9,12 @@ const gameHello = (gameMessage, gameArr) => {
     console.log(...gameQuestion);
     const answerUser = readlineSync.question('Your answer: ');
     const answerCorrect = String(gameArr[i][1]);
-    if (answerCorrect === answerUser) {
-      console.log('Correct!');
-    } else if (answerCorrect !== answerUser) {
+    if (answerCorrect !== answerUser) {
       console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${answerCorrect}'.`);
       console.log(`Let's try again, ${userName}!`);
       break;
     }
+    console.log('Correct!');
     if (i === 2) {
       console.log(`Congratulations, ${userName}!`);
     }
